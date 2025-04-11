@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import EncryptedMessageComposer from "./EncryptedMessageComposer";
 import MessageComposer from "./MessageComposer";
 import MessageList from "./MessageList";

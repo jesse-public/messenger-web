@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useContext, useState } from "react";
+import { FC, useCallback, useContext, useState } from "react";
 import { DispatchContext } from "../contexts";
 import { createConversation } from "../data/actions";
 import JoinConversationForm from "./JoinConversationForm";

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import PageConfirmAlias from "./Pages/PageConfirmAlias";
 import PageInitializeKeySet from "./Pages/PageInitializeKeySet";
 import PageStartConversation from "./Pages/PageStartConversation";

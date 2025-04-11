@@ -1,11 +1,11 @@
-import React, { FC, Reducer, useReducer } from "react";
+import { FC, useReducer } from "react";
 import Main from "./Main";
 import { DispatchContext, StateContext } from "../contexts";
-import { AppAction, rootReducer } from "../data/reducers";
-import { AppState, initialState } from "../data/state";
+import { rootReducer } from "../data/reducers";
+import { initialState } from "../data/state";
 
 const App: FC = () => {
-  const [state, dispatch] = useReducer<Reducer<AppState, AppAction>>(rootReducer, initialState);
+  const [state, dispatch] = useReducer(rootReducer, initialState);
 
   return (
     <DispatchContext.Provider value={dispatch}>

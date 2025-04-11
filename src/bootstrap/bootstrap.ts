@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "../components/App";
 
 export const bootstrap = async (): Promise<void> => {
@@ -11,6 +11,6 @@ export const bootstrap = async (): Promise<void> => {
   document.body.appendChild(element);
 
   const AppElement = React.createElement(App);
-
-  render(AppElement, element);
+  const root = createRoot(element);
+  root.render(AppElement);
 };
